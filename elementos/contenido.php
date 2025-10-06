@@ -16,12 +16,16 @@ $productos = [
       <th>Precio (€)</th>
     </tr>
   </thead>
-  <tbody>
-    <?php foreach ($productos as $nombre => $precio): ?>
-      <tr>
-        <td><?= htmlspecialchars($nombre) ?></td>
-        <td><?= number_format($precio, 2, ',', '.') ?></td>
-      </tr>
-    <?php endforeach; ?>
+  <?php
+  $keys = array_keys($productos);
+  for ($i = 0; $i < count($keys); $i++): 
+    //htmlspecialchars para evitar problemas de seguridad y asegurar que se muestre correctamente en HTML
+  ?>
+    <tr>
+      <td><?= htmlspecialchars($keys[$i]) ?></td>
+      
+      <td><?= number_format($productos[$keys[$i]], 2, ',', '.') ?></td>
+    </tr>
+  <?php endfor; ?>
   </tbody>
 </table>
