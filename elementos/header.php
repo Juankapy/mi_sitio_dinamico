@@ -1,5 +1,5 @@
 <header class="text-center bg-white p-3 rounded shadow-sm">
-  <h1 class="text-primary">🌟 Bienvenido a Camas 🌟</h1>
+  <h1 class="text-primary">🌟 Mi Sitio Dinamico PHP - Bienvenido a Camas 🌟</h1>
   <p class="text-muted">Usando include() por primera vez</p>
   <!-- Barra de navegación hecha con GPT -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 ">
